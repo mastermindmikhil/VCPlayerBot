@@ -187,7 +187,7 @@ async def repo_(client, message):
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
-    await message.reply("<b>t>VCPlayerBot.</a>\nThis was bot was made for @Tele_Movie_Rockers, By @Tele_Movie_Rockerz.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply("<b>t>VCPlayerBoy.</a>\nThis was bot was made for @Tele_Movie_Rockers, By @Tele_Movie_Rockerz.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     await delete_messages([message])
 
 @Client.on_message(filters.command(['restart', 'update', f"restart@{Config.BOT_USERNAME}", f"update@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
